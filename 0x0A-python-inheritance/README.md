@@ -5,8 +5,8 @@ In this project, I learned about Python class inheritance. I learned about the d
 ## Tests :heavy_check_mark:
 
 * [tests](./tests): Folder of test files:
-    * [1-my_list.txt](./test/1-my_list.txt)
-    * [7-base_geometry.txt](./test/7-base_geometry.txt)
+    * [1-my_list.txt](/test/1-my_list.txt)
+    * [7-base_geometry.txt](/test/7-base_geometry.txt)
 
 ## Function Prototypes :floppy_disk:
 

@@ -8,22 +8,22 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Get/set the width of the Rectangle."""
+        """width getter function."""
         return self.__width
 
     @property
     def height(self):
-        """Get/set the width of the Rectangle."""
+        """height getter function."""
         return self.__height
 
     @property
     def x(self):
-        """Get/set the width of the Rectangle."""
+        """x getter function."""
         return self.__x
 
     @property
     def y(self):
-        """Get/set the width of the Rectangle."""
+        """y getter function."""
         return self.__y
 
     @width.setter

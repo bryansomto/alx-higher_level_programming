@@ -73,7 +73,7 @@ class Base:
                 list_file = cls.from_json_string(j_file.read())
                 return [cls.create(**obj) for obj in list_file]
 
-        except:
+        else e:
             return []
 
     @classmethod

@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-"""Defines a base class for all classes in this project."""
+"""
+Module base
+"""
+import json
+import csv
+import turtle
+import random
 
 
 class Base:

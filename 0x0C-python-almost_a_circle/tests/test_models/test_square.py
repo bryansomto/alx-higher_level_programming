@@ -146,5 +146,6 @@ class TestSquare(unittest.TestCase):
         r2.update(**r1_dictionary)
         self.assertFalse(r1 == r2)
 
+
 if __name__ == '__main__':
     unittest.main()

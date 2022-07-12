@@ -81,5 +81,6 @@ class TestBase(unittest.TestCase):
         list_back = json.loads(json_dictionary)
         self.assertEqual(list_back, [dictionary])
 
+
 if __name__ == '__main__':
     unittest.main()

@@ -110,7 +110,7 @@ class Rectangle(Base):
         """
         attrs = [self.id, self.__width, self.__height, self.__x, self.__y]
         var = ('id', 'width', 'height', 'x', 'y')
-        if kwargs != None and (args == None or len(args) == 0):
+        if kwargs is not None and (args is None or len(args) == 0):
             for key, value in kwargs.items():
                 if key in var:
                     attrs[var.index(key)] = value

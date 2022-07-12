@@ -3,11 +3,22 @@
 
 
 class Base:
-    """Represents a base class."""
+    """Base model.
+
+    Represents a base class.
+
+    Private Class Attributes:
+        __nb_object (int): Number of instantiated Bases.
+    """
+
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Initialize a new base method."""
+        """Initialize a new base method.
+
+        Args:
+            id (int): The identity of the new Base.
+        """
         if id is not None:
             self.id = id
         else:

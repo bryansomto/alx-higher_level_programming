@@ -108,39 +108,18 @@ class Rectangle(Base):
                 - 5th argument should be the y attribute.
             **kwargs (dict): New key/value pairs of attributes.
         """
-        if args and len(args) != 0:
-            arg_count = 0
-            for arg in args:
-                if arg_count == 0:
-                    if arg is None:
-                        self.__init__(self.width, self.height, self.x, self.y)
-                    else:
-                        self.id = arg
-                elif arg_count == 1:
-                    self.width == arg
-                elif arg_count == 2:
-                    self.height == arg
-                elif arg_count == 3:
-                    self.x == arg
-                elif arg_count == 4:
-                    self.y == arg
-                arg_count += 1
-
-        elif kwargs and len(kwargs) != 0:
+        attrs = [self.id, self.__width, self.__height, self.__x, self.__y]
+        var = ('id', 'width', 'height', 'x', 'y')
+        if kwargs != None and (args == None or len(args) == 0):
             for key, value in kwargs.items():
-                if key == "id":
-                    if value is None:
-                        self.__init__(self.width, self.height, self.x, self.y)
-                    else:
-                        self.id = value
-                elif key == "width":
-                    self.width = value
-                elif key == "height":
-                    self.height = value
-                elif key == "x":
-                    self.x = value
-                elif key == "y":
-                    self.y = value
+                if key in var:
+                    attrs[var.index(key)] = value
+            (self.id, self.__width, self.__height, self.__x, self.__y) = attrs
+        else:
+            args_aux = list(attrs[i] for i in range(len(args), 5))
+            args_aux2 = list(args) + args_aux
+            (self.id, self.__width, self.__height,
+             self.__x, self.__y) = args_aux2
 
     def to_dictionary(self):
         """Return the dictionary representation of a Rectangle."""

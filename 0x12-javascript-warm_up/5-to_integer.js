@@ -3,7 +3,7 @@
 const arg = process.argv[2];
 const value = parseInt(arg);
 if (!isNaN(value)) {
-	console.log('My number: ' + value);
+  console.log('My number: ' + value);
 } else {
-	console.log('Not a number');
+  console.log('Not a number');
 }

@@ -6,7 +6,5 @@ const arg2 = process.argv[3];
 fs.writeFile(arg1, arg2, 'utf-8', function (error) {
   if (error) {
     console.log(error);
-  } else {
-    console.log('arg2 > arg1');
   }
 });

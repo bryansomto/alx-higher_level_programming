@@ -1,5 +1,5 @@
 #!/usr/bin/node
-/* A script that displays the status code of a GET request */
+/* A script that prints the title of a Star Wars movie where the episode number matches a given integer. */
 const request = require('request');
 const id = process.argv[2];
 const apiUrl = `https://swapi-api.hbtn.io/api/films/${id}`;
